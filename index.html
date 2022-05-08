@@ -6,15 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Interactive Map</title>
-    <script src="app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script src="app.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
   </head>
   <body>
-    <select id="business">
-      <option value="restaurants" selected>Restaurants</option>
-      <option value="hotels">Hotels</option>
-      <option value="grocery">Grocery</option>
-      <option value="gas">Gas</option>
-    </select>
+    <form>
+      <select id="business">
+        <option value="restaurants" selected>Restaurants</option>
+        <option value="hotels">Hotels</option>
+        <option value="grocery">Grocery</option>
+        <option value="gas">Gas</option>
+      </select>
+      <button id="submit">Submit</button>
+    </form>
     <div id="map"></div>
   </body>
 </html>
